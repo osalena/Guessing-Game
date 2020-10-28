@@ -7,3 +7,5 @@ a simple python project with following points:
 3. Voice navigator is implemented by pyttsx3 library.
 
 to launch App: launch main.py file
+
+![alt text](https://github.com/osalena/desktop-tutorial/pictures/diagram.png?raw=true)
