@@ -15,11 +15,13 @@ class View:
         self.TTS = pyttsx3.init()
         self.VOICES = self.TTS.getProperty('voices')
         self.TTS.setProperty('voice', self.VOICES[0].id)
+        #variables
         self.range = 0
         self.first_el = 0
         self.last_el = 0
         self.key = 0
 
+        #Tkinter objects
         self.root = root
 
         self.frametop = Frame(root, background="orange")
@@ -30,11 +32,6 @@ class View:
 
         self.lbl_output = Label(self.frametop, text=outputs[0], fg="white", font = "Verdana 20 bold", background="orange")
         self.lbl_output.pack(side=LEFT, pady = 20, padx = 20)
-
-
-        #base_folder = os.path.dirname(__file__)
-        #image_path = os.path.join(base_folder, 'pictures\dio.png')
-        #photo = PhotoImage(file=image_path)
 
         img_voice = ImageTk.PhotoImage(Image.open("pictures\dio.png"))
         self.lbl_voice = Label(self.frametop, image = img_voice)
@@ -57,7 +54,6 @@ class View:
         self.btn_to10 = Button(self.framebtm, text="10", image=img10, padx=20, pady=20, command=lambda : functions.setRange(self, 10))
         self.btn_to10.image=img10
         self.btn_to10.bind('<Button-1>', self.hide_me)
-        #btn_to10.bind("<Button-1>", handle_click)
         self.btn_to10.pack(side= LEFT)
 
         img20 = ImageTk.PhotoImage(Image.open("pictures\i_20.png"))
