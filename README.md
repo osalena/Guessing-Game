@@ -10,4 +10,4 @@
 
 to launch App: launch main.py file
 
-![alt text](https://github.com/osalena/desktop-tutorial/master/pictures/diagram.png)
+![alt text](/pictures/diagram.png)
